@@ -1,0 +1,34 @@
+### https://raw.github.com/github/gitignore/master/Global/osx.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### https://raw.github.com/github/gitignore/master/Global/vim.gitignore
+
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+### https://raw.github.com/github/gitignore/master/Global/tags.gitignore
+
+# Ignore tags created by etags and ctags
+TAGS
+!TAGS/
+tags
+!tags/
+
+
