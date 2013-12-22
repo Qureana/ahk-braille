@@ -26,10 +26,11 @@ class Letter
     script << ")\n"
     script << "\tSend, #{@input_key}"
     # puts script
+    script
   end
 
   def self.puts_get_key_state
-    script = ""
+    script = "key_value = 0\n"
     @@key_binds.each.with_index do |key, index|
       script << "if GetKeyState(\"#{key}\", \"P\")\n"
       script << "\t key_value += #{2 ** index}\n"
@@ -39,12 +40,8 @@ class Letter
 end
 
 decimals = []
+puts Letter.puts_get_key_state
 CSV.foreach("./braille_ja_table.csv") do |row|
   letter =  Letter.new(row[0], row[1], row[2])
-  letter.generate_script
-  decimals << letter.decimal
+  puts letter.generate_script
 end
-Letter.puts_get_key_state
-p decimals.sort!
-p decimals.group_by{|i| i}.reject{|k,v| v.one?}.keys
-# p codes
