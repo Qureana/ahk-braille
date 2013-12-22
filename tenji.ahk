@@ -40,7 +40,7 @@ l::
   	 key_value += 32
 
   if(status == c_dakuon){
-;    MsgBox, "‘÷‰¹"
+;    MsgBox, "æ¿éŸ³"
     if(key_value == 33)
     	Send, ga
     if(key_value == 35)
@@ -84,7 +84,7 @@ l::
     status = %c_default%
   }
   else if(status == c_handakuon){
-;    MsgBox, "”¼‘÷‰¹"
+;    MsgBox, "åŠæ¿éŸ³"
     if(key_value == 37)
     	Send, pa
     if(key_value == 39)
@@ -98,7 +98,7 @@ l::
     status = %c_default%
   }
   else if(status == c_youon){
-;    MsgBox, "X‰¹"
+;    MsgBox, "æ‹—éŸ³"
     if(key_value == 33)
     	Send, kya
     if(key_value == 41)
@@ -144,7 +144,7 @@ l::
     status = %c_default%
   }
   else if(status == c_dakuon_youon){
-;    MsgBox, "‘÷‰¹+X‰¹"
+;    MsgBox, "æ¿éŸ³+æ‹—éŸ³"
     if(key_value == 33)
     	Send, gya
     if(key_value == 41)
@@ -172,7 +172,7 @@ l::
     status = %c_default%
   }
   else if(status == c_handakuon_youon){
-;    MsgBox, "”¼‘÷‰¹+X‰¹"
+;    MsgBox, "åŠæ¿éŸ³+æ‹—éŸ³"
     if(key_value == 37)
     	Send, pya
     if(key_value == 45)
