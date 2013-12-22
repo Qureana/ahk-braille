@@ -15,8 +15,10 @@ status := %c_default%
 ^vkBAsc028::
   Suspend
 
-  isSuspendedString :=  A_IsSuspended ? "無効" : "有効"
-  TrayTip, 点字入力, 点字入力が%isSuspendedString%になりました．
+  ; isSuspendedString :=  A_IsSuspended ? "無効" : "有効"
+  ; TrayTip, 点字入力, 点字入力が%isSuspendedString%になりました．
+  isSuspendedString :=  A_IsSuspended ? "disabled" : "enabled"
+  TrayTip, Tenji Input, Tenji input is %isSuspendedString%.
   SetTimer, RemoveTrayTip, 5000
   return
   
