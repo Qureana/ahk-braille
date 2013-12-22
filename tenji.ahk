@@ -12,6 +12,19 @@ c_handakuon_youon := 5
 
 status := %c_default%
 
+^vkBAsc028::
+  Suspend
+
+  isSuspendedString :=  A_IsSuspended ? "無効" : "有効"
+  TrayTip, 点字入力, 点字入力が%isSuspendedString%になりました．
+  SetTimer, RemoveTrayTip, 5000
+  return
+  
+  RemoveTrayTip:
+  SetTimer, RemoveTrayTip, Off
+  TrayTip
+  return
+
 #r::Reload
 f::
 d::
