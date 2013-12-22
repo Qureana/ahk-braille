@@ -41,22 +41,144 @@ l::
 
   if(status == c_dakuon){
 ;    MsgBox, "‘÷‰¹"
+    if(key_value == 33)
+    	Send, ga
+    if(key_value == 35)
+    	Send, gi
+    if(key_value == 41)
+    	Send, gu
+    if(key_value == 43)
+    	Send, ge
+    if(key_value == 42)
+    	Send, go
+    if(key_value == 49)
+    	Send, za
+    if(key_value == 51)
+    	Send, zi
+    if(key_value == 57)
+    	Send, zu
+    if(key_value == 59)
+    	Send, ze
+    if(key_value == 58)
+    	Send, zo
+    if(key_value == 21)
+    	Send, da
+    if(key_value == 23)
+    	Send, di
+    if(key_value == 29)
+    	Send, du
+    if(key_value == 31)
+    	Send, de
+    if(key_value == 30)
+    	Send, do
+    if(key_value == 37)
+    	Send, ba
+    if(key_value == 39)
+    	Send, bi
+    if(key_value == 45)
+    	Send, bu
+    if(key_value == 47)
+    	Send, be
+    if(key_value == 46)
+    	Send, bo
     status = %c_default%
   }
   else if(status == c_handakuon){
 ;    MsgBox, "”¼‘÷‰¹"
+    if(key_value == 37)
+    	Send, pa
+    if(key_value == 39)
+    	Send, pi
+    if(key_value == 45)
+    	Send, pu
+    if(key_value == 47)
+    	Send, pe
+    if(key_value == 46)
+    	Send, po
     status = %c_default%
   }
   else if(status == c_youon){
 ;    MsgBox, "X‰¹"
+    if(key_value == 33)
+    	Send, kya
+    if(key_value == 41)
+    	Send, kyu
+    if(key_value == 42)
+    	Send, kyo
+    if(key_value == 49)
+    	Send, sya
+    if(key_value == 57)
+    	Send, syu
+    if(key_value == 58)
+    	Send, syo
+    if(key_value == 21)
+    	Send, tya
+    if(key_value == 29)
+    	Send, tyu
+    if(key_value == 30)
+    	Send, tyo
+    if(key_value == 5)
+    	Send, nya
+    if(key_value == 13)
+    	Send, nyu
+    if(key_value == 14)
+    	Send, nyo
+    if(key_value == 37)
+    	Send, hya
+    if(key_value == 45)
+    	Send, hyu
+    if(key_value == 46)
+    	Send, hyo
+    if(key_value == 53)
+    	Send, mya
+    if(key_value == 61)
+    	Send, myu
+    if(key_value == 62)
+    	Send, myo
+    if(key_value == 17)
+    	Send, rya
+    if(key_value == 25)
+    	Send, ryu
+    if(key_value == 26)
+    	Send, ryo
     status = %c_default%
   }
   else if(status == c_dakuon_youon){
 ;    MsgBox, "‘÷‰¹+X‰¹"
+    if(key_value == 33)
+    	Send, gya
+    if(key_value == 41)
+    	Send, gyu
+    if(key_value == 42)
+    	Send, gyo
+    if(key_value == 49)
+    	Send, zya
+    if(key_value == 57)
+    	Send, zyu
+    if(key_value == 58)
+    	Send, zyo
+    if(key_value == 21)
+    	Send, dya
+    if(key_value == 29)
+    	Send, dyu
+    if(key_value == 30)
+    	Send, dyo
+    if(key_value == 37)
+    	Send, bya
+    if(key_value == 45)
+    	Send, byu
+    if(key_value == 46)
+    	Send, byo
     status = %c_default%
   }
   else if(status == c_handakuon_youon){
 ;    MsgBox, "”¼‘÷‰¹+X‰¹"
+    if(key_value == 37)
+    	Send, pya
+    if(key_value == 45)
+    	Send, pyu
+    if(key_value == 46)
+    	Send, pyo
     status = %c_default%
   }
   else
